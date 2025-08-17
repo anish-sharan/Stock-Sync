@@ -102,12 +102,7 @@ src/
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
-
-This project is licensed under the ISC License - see the [LICENSE](LICENSE) file for details.
-
 ## 📧 Contact
 
-Your Name - your.email@example.com
+Your Name - Anish Sharan
 
-Project Link: [https://github.com/yourusername/stocksync](https://github.com/yourusername/stocksync)
