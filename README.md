@@ -31,7 +31,7 @@ StockSync is a robust backend service built with Node.js, TypeScript, and Expres
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/stocksync.git
+   git clone https://github.com/anish-sharan/stocksync.git
    cd stocksync
    ```
 
