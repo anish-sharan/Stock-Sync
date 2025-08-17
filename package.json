@@ -1,0 +1,53 @@
+{
+  "name": "stocksync",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only -r tsconfig-paths/register src/index.ts",
+    "start": "node dist/index.js",
+    "build": "rimraf build && tsc && npm run copy-assets"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "compression": "^1.8.1",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "inversify": "^6.0.3",
+    "inversify-express-utils": "^6.5.0",
+    "pg": "^8.16.3",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.25",
+    "zod": "^4.0.17"
+  },
+  "_moduleAliases": {
+    "@core": "./build/src/core",
+    "@features": "./build/src/features",
+    "@config": "./build/src/core/config",
+    "@errors": "./build/src/core/errors",
+    "@middlewares": "./build/src/core/middlewares",
+    "@decorators": "./build/src/core/decorators",
+    "@logger": "./build/src/core/logger",
+    "@database": "./build/src/core/database",
+    "@types": "./build/src/core/types",
+    "@services": "./build/src/services",
+    "@utils": "./build/src/utils"
+  },
+  "devDependencies": {
+    "@types/compression": "^1.8.1",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/express-rate-limit": "^6.0.2",
+    "@types/helmet": "^4.0.0",
+    "@types/inversify": "^2.0.33",
+    "@types/node": "^24.3.0",
+    "@types/winston": "^2.4.4",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.9.2"
+  }
+}
